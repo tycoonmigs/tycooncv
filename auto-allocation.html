@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savings & Expenses Auto Allocation</title>
+    <link rel="stylesheet" href="assets/css/auto-allocation.css">
+    <link rel="icon" type="image/png" sizes="626x626" href="assets/img/tg.png">
+    <link rel="icon" type="image/png" sizes="626x626" href="assets/img/tg.png">
+</head>
+<body>
+
+    <h2 class="white-color">Auto Allocation</h2>
+
+    <main>
+        <p class="white-color">Enter your total amount to automatically allocate your savings & expenses.</p>
+        
+        <input type="number" id="amountInput" placeholder="Enter amount" oninput="calculateAllocation()">
+        <p id="errorMessage"></p>
+
+        <h3 class="white-color">Result Allocation</h3>
+        
+        <div class="allocation-box">
+            <img src="assets/img/bpi.png" alt="BPI Logo"> 
+            <h4>Health (BPI) – 25%</h4>
+            <p>Covers medical emergencies, check-ups, and health insurance.</p>
+            <div class="result-box" id="health"></div>
+        </div>
+
+        <div class="allocation-box">
+            <img src="assets/img/gcash.png" alt="GCash Logo"> <img src="assets/img/maya.png" alt="Maya Logo">
+            <h4>Daily Expenses (GCash & PayMaya) – 25%</h4>
+            <p>For food, bills, transportation, and other daily needs.</p>
+            <div class="result-box" id="daily"></div>
+        </div>
+
+        <div class="allocation-box">
+            <img src="assets/img/landbank.png" alt="LandBank Logo">
+            <h4>Future (Land Bank) – 10%</h4>
+            <p>Savings for starting a family, education, and home down payment.</p>
+            <div class="result-box" id="future"></div>
+        </div>
+
+        <div class="allocation-box">
+            <img src="assets/img/security-bank.png" alt="Security Bank Logo">
+            <h4>Luxury & Business Fund (Security Bank & UnionBank) – 20%</h4>
+            <p>For big purchases (car, phone, house) and business investments.</p>
+            <div class="result-box" id="luxury"></div>
+        </div>
+
+        <div class="allocation-box">
+            <img src="assets/img/bpi.png" alt="BPI Logo">
+            <h4>Emergency Fund (BPI) – 15%</h4>
+            <p>Separate from health savings, used for unexpected life events (job loss, urgent repairs).</p>
+            <div class="result-box" id="emergency"></div>
+        </div>
+
+        <div class="allocation-box">
+            <img src="assets/img/philhealth.png" alt="Investment Logo">
+            <h4>Investments & Retirement (Optional – 5%)</h4>
+            <p>Stocks, mutual funds, or Pag-IBIG MP2 for long-term growth.</p>
+            <div class="result-box" id="investment"></div>
+        </div>
+    </main>
+
+    <script src="assets/js/auto-allocation.js"></script>
+</body>
+</html>
