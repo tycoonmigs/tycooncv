@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="assets/css/Navbar-Right-Links-Dark-icons.css">
     <link rel="stylesheet" href="assets/css/Team-images.css">
     <link rel="stylesheet" href="assets/css/fade-transition.css">
+    <link rel="stylesheet" href="assets/css/carousel.css">
 </head>
 
 <body style="background: #101720;">
@@ -112,26 +113,70 @@
             </div>           
         </div>
     </div>
-    <section class="text-white photo-gallery py-4 py-xl-5" data-aos="zoom-in-right" data-aos-duration="1000" style="font-family: Poppins, sans-serif;">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-md-8 col-xl-6 text-center mx-auto">
-                    <h2 class="fw-bold">Portfolio</h2>
-                    <p class="w-lg-50">Explore a curated collection of my projects and accomplishments.</p>
-                </div>
+
+        <section class="portfolio-section">
+        <div class="col-md-8 col-xl-6 text-center mx-auto">
+            <h2 class="fw-bold">Portfolio</h2>
+            <p class="w-lg-50">Explore a curated collection of my projects and accomplishments.</p>
+            <br><br><br>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="assets/img/1.png" alt="Project 1">
             </div>
-            <div class="row gx-2 gy-2 row-cols-1 row-cols-md-2 row-cols-xl-3 photos" data-bss-baguettebox="">
-                <div class="col item"><a href="assets/img/1.png"><img class="img-fluid" src="assets/img/1.png"></a></div>
-                <div class="col item"><a href="assets/img/2.png"><img class="img-fluid" src="assets/img/2.png"></a></div>
-                <div class="col item"><a href="assets/img/6.png"><img class="img-fluid" src="assets/img/6.png"></a></div>
-                <div class="col item"><a href="assets/img/5.png"><img class="img-fluid" src="assets/img/5.png"></a></div>
-                <div class="col item"><a href="assets/img/4.png"><img class="img-fluid" src="assets/img/4.png"></a></div>
-                <div class="col item"><a href="assets/img/3.png"><img class="img-fluid" src="assets/img/3.png"></a></div>
-                <div class="col item"><a href="assets/img/7.png"><img class="img-fluid" src="assets/img/7.png"></a></div>
-                <div class="col item"><a href="assets/img/8.png"><img class="img-fluid" src="assets/img/8.png"></a></div>
+            
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="assets/img/2.png" alt="Project 2">
+            </div>
+            
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="assets/img/3.png" alt="Project 3">
+            </div>
+            
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="assets/img/4.png" alt="Project 4">
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="assets/img/5.png" alt="Project 5">
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="assets/img/6.png" alt="Project 6">
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <video autoplay loop muted playsinline controlslist="nodownload" disablepictureinpicture oncontextmenu="return false;">
+                    <source src="assets/img/7.mp4" type="video/mp4">
+                </video>
+            </div>
+            
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="assets/img/8.png" alt="Project 8">
+            </div>
+<!--
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&fit=crop" alt="Project 4">
+            </div>
+            
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&fit=crop" alt="Project 5">
+            </div>
+            
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <video autoplay loop muted playsinline controlslist="nodownload" disablepictureinpicture oncontextmenu="return false;">
+                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4" type="video/mp4">
+                </video>
+            </div>
+            
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&fit=crop" alt="Project 6">
             </div>
         </div>
+    -->
     </section>
+
     <section data-aos="zoom-in-right" data-aos-duration="1000" class="py-4 py-xl-5" style="font-family: Poppins, sans-serif;">
         <div class="container">
             <div class="text-center p-4 p-lg-5">
@@ -199,6 +244,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
     <script src="assets/js/Lightbox-Gallery.js"></script>
+    <script src="assets/js/carousel.js"></script>
 </body>
 
 </html>
